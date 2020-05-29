@@ -7,14 +7,26 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/titlebackground"
+        android:layout_width="417dp"
+        android:layout_height="199dp"
+        android:background="#A3D7DD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/Mainbutton4"
         android:layout_width="209dp"
         android:layout_height="31dp"
         android:background="#009688"
-        android:text="HGandling fever"
+        android:text="Handling fever"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
+        android:onClick="goToLink2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +56,7 @@
         android:text="Mechanism of fever"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
+        android:onClick="goToMechanismActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,16 +67,16 @@
         android:id="@+id/Maintitle"
         android:layout_width="118dp"
         android:layout_height="40dp"
-        android:background="#FFFFFF"
+        android:background="#A3D7DD"
         android:text="BT tracker"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#673AB7"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/Mainbutton1"
@@ -79,4 +92,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.347" />
+
+    <ImageView
+        android:id="@+id/titleimage"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titlebackground"
+        app:layout_constraintEnd_toStartOf="@+id/Maintitle"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="@+id/titlebackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775"
+        app:srcCompat="@android:drawable/btn_star" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
