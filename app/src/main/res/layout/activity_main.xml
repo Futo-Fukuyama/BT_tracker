@@ -122,6 +122,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
+        
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
