@@ -69,6 +69,24 @@
             android:textColor="#FFFFFF" />
 
         <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <TextView
+            android:id="@+id/Mainbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:onClick="goToLogacvtivity"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Please log your body temparture"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <View
             android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="8dp" />
@@ -104,23 +122,6 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
-        <View
-            android:id="@+id/view4"
-            android:layout_width="match_parent"
-            android:layout_height="8dp" />
-
-        <TextView
-            android:id="@+id/Mainbutton1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#009688"
-            android:onClick="goToLogacvtivity"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:text="Please log your body temparture"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
