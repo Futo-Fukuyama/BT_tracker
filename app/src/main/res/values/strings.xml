@@ -5,4 +5,5 @@
     <string name="mechanism_of_fever">Mechanism of fever</string>
     <string name="handling_fever">Handling fever</string>
     <string name="bt_tracker">BT Tracker</string>
+    <string name="set_reminder">Set Reminder</string>
 </resources>
