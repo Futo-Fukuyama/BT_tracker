@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,7 +24,7 @@
         android:layout_width="127dp"
         android:layout_height="36dp"
         android:background="#A3D7DD"
-        android:text="BT Tracker"
+        android:text="@string/bt_tracker"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/titlebackground"
@@ -62,15 +63,15 @@
         app:layout_constraintVertical_bias="0.060000002">
 
         <TextView
-            android:id="@+id/Mainbutton2"
+            android:id="@+id/Mainbutton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
-            android:onClick="goToNormalActivity"
+            android:onClick="goToLogacvtivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:text="Check normal range"
+            android:text="@string/please_log_your_body_temparture"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -80,15 +81,15 @@
             android:layout_height="8dp" />
 
         <TextView
-            android:id="@+id/Mainbutton1"
+            android:id="@+id/Mainbutton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#009688"
-            android:onClick="goToLogacvtivity"
+            android:onClick="goToNormalActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:text="Please log your body temparture"
+            android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -106,7 +107,7 @@
             android:onClick="goToMechanismActivity"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:text="Mechanism of fever"
+            android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
@@ -124,7 +125,7 @@
             android:onClick="goToLink2"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:text="Handling fever"
+            android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF" />
 
