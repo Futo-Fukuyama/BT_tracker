@@ -6,34 +6,55 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    public void goToLogacvtivity(View view) {
-        Intent toLog = new Intent(this, Logacvtivity.class);
-        startActivity(toLog);
-    }
+        TextView mainButton1 = findViewById(R.id.Mainbutton1);
+        mainButton1.setOnClickListener(this);
 
-    public void goToNormalActivity(View view) {
-        Intent toNormal = new Intent(this, NormalActivity.class);
-        startActivity(toNormal);
+        TextView mainButton2 = findViewById(R.id.Mainbutton2);
+        mainButton2.setOnClickListener(this);
+
+        TextView mainButton3 = findViewById(R.id.Mainbutton3);
+        mainButton3.setOnClickListener(this);
+
+        TextView mainButton4 = findViewById(R.id.Mainbutton4);
+        mainButton4.setOnClickListener(this);
+
+    @Override
+    public void onClick (View view)  {
+         switch (view.getId()) {
+             case R.id.Mainbutton1:
+                    // If Mainbutton1 is clicked, do something
+                    Intent toLog = new Intent(this, Logacvtivity.class);
+                    startActivity(toLog);
+                    break;
+                case R.id.Mainbutton2:
+                    Intent toNormal = new Intent(this, NormalActivity.class);
+                    startActivity(toNormal);
+                    break;
+                case R.id.Mainbutton3:
+                    Intent toMechanism = new Intent(this, MechanismActivity.class);
+                    startActivity(toMechanism);
+                    break;
+                case R.id.Mainbutton4:
+                    Intent openFeverLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
+                    if (openFeverLink.resolveActivity(getPackageManager()) != null) {
+                        startActivity(openFeverLink);
+                    }
+                    break;
 
 
-    }
+            }
 
-    public void goToMechanismActivity(View view) {
-        Intent toMechanism = new Intent(this, MechanismActivity.class);
-        startActivity(toMechanism);
-    }
 
-    public void goToLink2(View view) {
-        Intent toLink2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.healthline.com/health/how-to-break-a-fever"));
-        startActivity(toLink2);
+        }
+
     }
 }
