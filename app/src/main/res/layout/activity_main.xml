@@ -5,14 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#EDEEC9"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/titlebackground"
         android:layout_width="417dp"
         android:layout_height="199dp"
-        android:background="#A3D7DD"
+        android:background="#77BFA3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         android:id="@+id/Maintitle"
         android:layout_width="127dp"
         android:layout_height="36dp"
-        android:background="#A3D7DD"
+        android:background="#77BFA3"
         android:text="@string/bt_tracker"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#FFFFFF"
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#40916C"
 
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#40916C"
 
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -104,7 +104,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#40916C"
 
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -122,7 +122,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#009688"
+            android:background="#40916C"
 
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
