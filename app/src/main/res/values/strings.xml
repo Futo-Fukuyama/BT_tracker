@@ -6,7 +6,7 @@
     <string name="handling_fever">Handling fever</string>
     <string name="bt_tracker">BT Tracker</string>
     <string name="set_reminder">Set Reminder</string>
-    <string name="button">Button</string>
+    <string name="button">Save</string>
     <string name="why_do_we_have_fever">Why do we have fever?</string>
     <string name="useful_links_about_fever">Useful links about fever</string>
 </resources>

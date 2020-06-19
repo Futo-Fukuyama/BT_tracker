@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ConfirmActivity"></activity>
+
         <receiver
             android:name=".ReminderBroadcastReceiver"
             android:enabled="true"
@@ -16,8 +18,9 @@
 
         <activity android:name=".MechanismActivity" />
         <activity android:name=".NormalActivity" />
-        <activity android:name=".LogActivity"
-                  android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".LogActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

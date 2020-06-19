@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.202" />
 
     <EditText
-        android:id="@+id/logimputdata"
+        android:id="@+id/LogInputData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -37,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button"
+        android:onClick="confirmBT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
