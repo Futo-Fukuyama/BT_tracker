@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1FAEE"
-    tools:context=".Logacvtivity">
+    android:background="#FDFFB6"
+    tools:context=".LogActivity">
 
     <TextView
         android:id="@+id/Logtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please log your body temparture"
+        android:text="@string/please_log_your_body_temperature"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#390099"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
         android:id="@+id/logsavebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

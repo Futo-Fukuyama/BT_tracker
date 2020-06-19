@@ -72,9 +72,10 @@
 
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
-            android:text="@string/please_log_your_body_temparture"
+            android:text="@string/please_log_your_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view4"
@@ -92,7 +93,8 @@
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view2"
@@ -110,7 +112,8 @@
             android:paddingTop="10dp"
             android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view3"
@@ -128,7 +131,8 @@
             android:paddingTop="10dp"
             android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:paddingStart="10dp" />
 
 
     </LinearLayout>
@@ -137,12 +141,13 @@
         android:id="@+id/setReminderButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="setReminder"
         android:text="@string/set_reminder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titlebackground"
-        app:layout_constraintVertical_bias="0.867" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.641" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
